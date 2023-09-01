@@ -1,23 +1,23 @@
 const questions = [
     {
-        question: "Wählen Sie den Deepfake.",
+        question: "WÃ¤hlen Sie den Deepfake.",
         answers: [
-            { text: "Video A", correct: true },
-            { text: "Video B", correct: false }
+            { text: "Video A", url: "https://www.youtube.com/embed/-lYz611nwhI?si=iwSdBcxwfeenho75?&autoplay=1", correct: true },
+            { text: "Video B", url: "https://www.youtube.com/embed/gwfaocsokTM?si=LdABItd86mgAH94n?&autoplay=1", correct: false }
         ]
     },
     {
-        question: "Wählen Sie den Deepfake.",
+        question: "WÃ¤hlen Sie den Deepfake.",
         answers: [
-            { text: "Video C", correct: false },
-            { text: "Video D", correct: true }
+            { text: "Video C", url: "https://www.youtube.com/embed/4x-BcYCiKCk?si=gijiCgLB-eYoWsvv?&autoplay=1", correct: false },
+            { text: "Video D", url: "https://www.youtube.com/embed/-lYz611nwhI?si=iwSdBcxwfeenho75?&autoplay=1", correct: true }
         ]
     },
     {
-        question: "Wählen Sie den Deepfake.",
+        question: "WÃ¤hlen Sie den Deepfake.",
         answers: [
-            { text: "Video E", correct: false },
-            { text: "Video F", correct: true }
+            { text: "Video E", url: "https://www.youtube.com/embed/gwfaocsokTM?si=LdABItd86mgAH94n?&autoplay=1", correct: false },
+            { text: "Video F", url: "https://www.youtube.com/embed/4x-BcYCiKCk?si=gijiCgLB-eYoWsvv?&autoplay=1", correct: true }
         ]
     }
 ];
@@ -25,6 +25,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const videoContainer = document.getElementById("vids");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -32,21 +33,29 @@ let score = 0;
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next";
+    nextButton.innerHTML = "Weiter";
     showQuestion();
 }
 
 function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
+        const iframeVid = document.createElement("iframe");
         button.innerHTML = answer.text;
+        iframeVid.width = "100%";
+        iframeVid.height = "100%";
+        iframeVid.src = answer.url;
+        iframeVid.title = "Youtube video player";
+        iframeVid.frameBorder = "0";
+        iframeVid.allow = "accelerometer; encrypted-media; autoplay;";
+        iframeVid.allowFullscreen === "true";
         button.classList.add("btn");
         answerButtons.appendChild(button);
+        videoContainer.appendChild(iframeVid);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
@@ -58,6 +67,9 @@ function resetState() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
+    }
+    while (videoContainer.firstChild) {
+        videoContainer.removeChild(videoContainer.firstChild);
     }
 }
 
