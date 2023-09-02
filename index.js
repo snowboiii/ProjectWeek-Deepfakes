@@ -46,6 +46,7 @@ function showQuestion() {
         const button = document.createElement("button");
         const iframeVid = document.createElement("iframe");
         button.innerHTML = answer.text;
+        iframeVid.style.margin = "2px";
         iframeVid.width = "100%";
         iframeVid.height = "100%";
         iframeVid.src = answer.url;
