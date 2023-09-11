@@ -29,6 +29,9 @@ const videoContainer = document.getElementById("vids");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let parentContainerWidth = videoContainer.offsetWidth;
+let pixels = 0;
+
 
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -41,18 +44,20 @@ function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     questionElement.innerHTML = currentQuestion.question;
-
+    
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         const iframeVid = document.createElement("iframe");
         button.innerHTML = answer.text;
-        iframeVid.style.margin = "2px";
-        iframeVid.width = "100%";
-        iframeVid.height = "100%";
+        iframeVid.style.margin = "auto";
+        iframeVid.width = "45%";
+        pixels = (45 / 100) * parentContainerWidth;
+        iframeVid.height = pixels + "px";
         iframeVid.src = answer.url;
         iframeVid.title = "Youtube video player";
         iframeVid.frameBorder = "0";
-        iframeVid.allow = "accelerometer; encrypted-media; autoplay;";
+        iframeVid.allow = "accelerometer; encrypted-media;";
+        // ...; autoplay;"; add that to the line above
         iframeVid.allowFullscreen === "true";
         button.classList.add("btn");
         answerButtons.appendChild(button);
