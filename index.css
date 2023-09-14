@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(60, 60, 60, 1.00);
+    background-color: white;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -16,54 +16,48 @@ header {
     margin-left: auto;
     margin-right: auto;
     font-size: 36px;
-    color: white;
+    color: black;
     padding-bottom: 5%;
 }
 
 .infotext {
     font-size: 1rem;
+    padding: 0 7%;
 }
 
 .sec1 {
-    color: white;
-    background-color: rgba(45, 45, 45, 1.00);
+    color: black;
     padding-bottom: 5%;
 }
 
 .sec2 {
-    color: white;
+    color: black;
     padding-bottom: 5%;
 }
 
 .sec3 {
-    color: white;
-    background-color: rgba(45, 45, 45, 1.00);
+    color: black;
     padding-bottom: 5%;
 }
 
 .sec4 {
-    color: white;
+    color: black;
     padding-bottom: 5%;
 }
 
 .sec5 {
-    color: white;
-    background-color: rgba(45, 45, 45, 1.00);
+    color: black;
     padding-bottom: 5%;
 }
 
 .sectionheader {
     padding-left: 1%;
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
 }
 
 .subheader {
     padding-left: 1%;
     font-size: 20px;
     font-weight: 700;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
 }
 
 .paragraph {
@@ -118,8 +112,8 @@ iframe:nth-child(2) {
 }
 
 .btn {
-    background: rgba(46, 46, 46, 1.00);
-    color: white;
+    background: white;
+    color: black;
     font-weight: 500;
     width: 100%;
     border: 2px solid #226de4;
@@ -145,7 +139,7 @@ iframe:nth-child(2) {
 }
 
 #next-btn {
-    background: rgba(46, 46, 46, 1.00);
+    background: white;
     color: white;
     font-weight: 500;
     width: 150px;
