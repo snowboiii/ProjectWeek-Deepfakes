@@ -24,6 +24,9 @@ header {
     color: white;
     background-color: rgba(45, 45, 45, 1.00);
     padding-bottom: 5%;
+    width: 7%;
+    height: auto;
+    align-items: left;
 }
 
 .sec2 {
@@ -32,6 +35,17 @@ header {
 }
 
 .sec3 {
+    color: white;
+    background-color: rgba(45, 45, 45, 1.00);
+    padding-bottom: 5%;
+}
+
+.sec4 {
+    color: white;
+    padding-bottom: 5%;
+}
+
+.sec5 {
     color: white;
     background-color: rgba(45, 45, 45, 1.00);
     padding-bottom: 5%;
