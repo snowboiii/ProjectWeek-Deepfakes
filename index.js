@@ -30,8 +30,8 @@ const videoContainer = document.getElementById("vids");
 let currentQuestionIndex = 0;
 let score = 0;
 let parentContainerWidth = videoContainer.offsetWidth;
+let parentContainerHeight = videoContainer.offsetHeight;
 let pixels = 0;
-
 
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -50,9 +50,8 @@ function showQuestion() {
         const iframeVid = document.createElement("iframe");
         button.innerHTML = answer.text;
         iframeVid.style.margin = "auto";
-        iframeVid.width = "45%";
-        pixels = (45 / 100) * parentContainerWidth;
-        iframeVid.height = pixels + "px";
+        iframeVid.width = "100%";
+        iframeVid.height = "100%";
         iframeVid.src = answer.url;
         iframeVid.title = "Youtube video player";
         iframeVid.frameBorder = "0";
