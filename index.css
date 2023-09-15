@@ -178,6 +178,7 @@ iframe:nth-child(2) {
 }
 
 .qrcode {
-	height: 50px;
-    width: 50px;
+	height: 1vw;
+    width: 1vw;
+	margin: 0 auto;
 }
