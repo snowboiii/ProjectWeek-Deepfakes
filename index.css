@@ -176,3 +176,8 @@ iframe:nth-child(2) {
 .incorrect {
     background: #ea1c1c;
 }
+
+.qrcode {
+	height: 50px;
+    width: 50px;
+}
