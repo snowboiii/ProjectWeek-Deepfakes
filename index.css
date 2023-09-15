@@ -22,32 +22,44 @@ header {
 
 .infotext {
     font-size: 1rem;
-    padding: 0 7%;
 }
 
 .sec1 {
     color: black;
+    background-color: white;
     padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sec2 {
     color: black;
     padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sec3 {
     color: black;
+    background-color: white;
     padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sec4 {
     color: black;
     padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sec5 {
     color: black;
+    background-color: white;
     padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sectionheader {
@@ -93,9 +105,9 @@ iframe:nth-child(2) {
 
 .app h1 {
     font-size: 25px;
-    color: white;
+    color: black;
     font-weight: 600;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid #000000;
 }
 
 .quiz {
@@ -105,7 +117,7 @@ iframe:nth-child(2) {
 
 .quiz h2 {
     font-size: 18px;
-    color: white;
+    color: black;
     font-weight: 600;
     padding-left: 2%;
     padding-top: 2%;
@@ -140,7 +152,7 @@ iframe:nth-child(2) {
 
 #next-btn {
     background: white;
-    color: white;
+    color: black;
     font-weight: 500;
     width: 150px;
     border: 2px solid #226de4;
@@ -154,7 +166,7 @@ iframe:nth-child(2) {
 
 #next-btn:hover {
     background: #226de4;
-    color: white;
+    color: black;
 }
 
 .correct {
