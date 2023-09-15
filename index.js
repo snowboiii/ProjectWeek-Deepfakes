@@ -2,22 +2,22 @@ const questions = [
     {
         question: "Wählen Sie den Deepfake.",
         answers: [
-            { text: "Video A", url: "https://www.youtube.com/embed/-lYz611nwhI?si=iwSdBcxwfeenho75?&autoplay=1", correct: true },
-            { text: "Video B", url: "https://www.youtube.com/embed/gwfaocsokTM?si=LdABItd86mgAH94n?&autoplay=1", correct: false }
+            { text: "Video A", url: "https://www.youtube.com/embed/h_jrebvmPlk?si=rovTcNk46HWWLDw7?&autoplay=1", correct: true },
+            { text: "Video B", url: "https://www.youtube.com/embed/gNlSRd2w5IA?si=2dIkoHdwsCVtIXti?&autoplay=1", correct: false }
         ]
     },
     {
         question: "Wählen Sie den Deepfake.",
         answers: [
-            { text: "Video C", url: "https://www.youtube.com/embed/4x-BcYCiKCk?si=gijiCgLB-eYoWsvv?&autoplay=1", correct: false },
-            { text: "Video D", url: "https://www.youtube.com/embed/-lYz611nwhI?si=iwSdBcxwfeenho75?&autoplay=1", correct: true }
+            { text: "Video A", url: "https://www.youtube.com/embed/Mbn7Ag-1dQ0?si=6tIwVDGva4Jd_Bv9?&autoplay=1", correct: false },
+            { text: "Video B", url: "https://www.youtube.com/embed/6iExPTj-Jyc?si=odLW4KtkIFt1V51f?&autoplay=1", correct: true }
         ]
     },
     {
         question: "Wählen Sie den Deepfake.",
         answers: [
-            { text: "Video E", url: "https://www.youtube.com/embed/gwfaocsokTM?si=LdABItd86mgAH94n?&autoplay=1", correct: false },
-            { text: "Video F", url: "https://www.youtube.com/embed/4x-BcYCiKCk?si=gijiCgLB-eYoWsvv?&autoplay=1", correct: true }
+            { text: "Video A", url: "https://www.youtube.com/embed/A_QayszcIAc?si=JbWbuFDuEAdMHEdN?&autoplay=1", correct: false },
+            { text: "Video B", url: "https://www.youtube.com/embed/HG_NZpkttXE?si=PD1i4wVox3T5qeEE?&autoplay=1", correct: true }
         ]
     }
 ];
